@@ -1,43 +1,43 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Orion lib = loadstring(game:http get((' https://raw . githubusercontent . com/shlexware/Orion/main/source ')))()
 OrionLib:MakeNotification({
-	Name = "加载成功",
-	Content = "1脚本加载成功",
-	Image = "rbxassetid://4483345998",
-	Time = 5
+Name = "加载成功",
+Content = "1脚本加载成功",
+Image = "rbxassetid://4483345998 "，
+时间= 5
 })
-local Window = OrionLib:MakeWindow({Name = "1脚本中心🇨🇳", HidePremium = false, SaveConfig = true, ConfigFolder = "1脚本"})
+local Window = Orion lib:make Window({ Name = " 1脚本中心🇨🇳"，HidePremium = false，SaveConfig = true，ConfigFolder = "1脚本"})
 
 local Tab = Window:MakeTab({
-	Name = "通用",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+Name = "通用",
+Icon = "rbxassetid://4483345998 "，
+PremiumOnly = false
 })
 
-Tab:AddButton({
-	Name = "点击传送工具",
-	Callback = function()
-mouse = game.Players.LocalPlayer:GetMouse() tool = Instance.new("Tool") tool.RequiresHandle = false tool.Name = "[FE] TELEPORT TOOL" tool.Activated:connect(function() local pos = mouse.Hit+Vector3.new(0,2.5,0) pos = CFrame.new(pos.X,pos.Y,pos.Z) game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos end) tool.Parent = game.Players.LocalPlayer.Backpack
-	end
+选项卡:添加按钮({
+Name = "点击传送工具",
+回调=函数()
+鼠标=游戏。players . local player:get mouse()Tool = instance . new(" Tool ")工具。RequiresHandle = false工具。Name = "[FE]传送工具"工具。已激活:连接(函数()本地位置=鼠标。Hit+Vector3.new(0，2.5，0) pos = CFrame.new(pos。x，位置。y，位置。z)游戏。players . local player . character . humanoidrootpart . c frame = pos end)工具。家长=游戏。玩家.本地玩家.背包
+结束
 })
 
-Tab:AddButton({
-	Name = "飞行",
-	Callback = function()
-            loadstring(game:HttpGet("https://pastebin.com/raw/gqv7PXAa"))()
-  	end    
+选项卡:添加按钮({
+Name = "飞行",
+回调=函数()
+loadstring(game:http get(" https://pastebin . com/raw/gqv 7 pxaa "))()
+结束
 })
 
 local Tab = Window:MakeTab({
 	Name = "俄亥俄州💀",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+Icon = "rbxassetid://4483345998 "，
+PremiumOnly = false
 })
 
-Tab:AddButton({
-	Name = "皇脚本(会占用ui)",
-	Callback = function()
-            loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\80\100\84\55\99\65\82\84"))()
-  	end    
+选项卡:添加按钮({
+Name = "皇脚本（会占用ui)"，
+回调=函数()
+loadstring(game:http get(" 104 116 116 112 115 58 47 47 112 97 115 116 101 98 105 110 46 99 111 109 47 114 97 119 47 80 100 84 55 99 65 82 84 "))()
+结束
 })
 
 Tab:AddButton({
